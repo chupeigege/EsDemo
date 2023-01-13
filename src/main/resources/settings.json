@@ -1,0 +1,19 @@
+{
+    "index" : {
+      "number_of_shards" : "6",
+      "analysis" : {
+        "analyzer" : {
+          "uax_url_email" : {
+            "type": "custom",
+            "tokenizer" : "uax_url_email"
+          }
+        },
+        "tokenizer" : {
+          "uax_url_email" : {
+            "type" : "uax_url_email"
+          }
+        }
+      },
+      "number_of_replicas" : "2"
+    }
+}
